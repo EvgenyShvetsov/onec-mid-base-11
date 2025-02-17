@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dbaf7eb6-9d49-4acd-91c1-5e542a14db98">
+  <producedTypes>
+    <objectType typeId="263fe94a-8727-4bb2-bacc-946593376ee1" valueTypeId="c6b4984f-3da0-48f8-b6c2-8e826bca281a"/>
+    <refType typeId="882e6af5-91a7-49fa-bf51-fe90ef791829" valueTypeId="0bad2c4a-942f-427c-8758-3f76f35c1ddf"/>
+    <selectionType typeId="e4f16ee3-6956-4fc5-b861-f35e318ef0ea" valueTypeId="2acce06b-d03e-4870-a24d-affab37b5c53"/>
+    <listType typeId="89a96b75-5656-47c3-9867-69a3ae19ec47" valueTypeId="15dae692-c8b9-4981-9522-998702f6e859"/>
+    <managerType typeId="b72a0c76-4aa3-4ac4-bb5e-2632e6d28568" valueTypeId="cc5ec899-bca1-4848-a0af-7deb66547382"/>
+  </producedTypes>
+  <name>КЛ_КонтактныеЛица</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контактные лица</value>
+  </synonym>
+  <comment>для Контрагентов необходимо хранить список контактных лиц</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КЛ_КонтактныеЛица.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.КЛ_КонтактныеЛица.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Контактное лицо</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Контрагенты</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="1fd3fcbc-99b8-4b40-8a9b-29f09a2dd3bb">
+    <name>КонтактныйТелефон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контактный телефон</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>11</length>
+      </stringQualifiers>
+    </type>
+    <mask>9 (999) 999 99 99</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
